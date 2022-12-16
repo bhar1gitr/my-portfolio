@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:  ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+#bar{
+    display: none;
+}
+
+/* Side Navigation Bar */
+
+section .social-media{
+    border: 5px solid #c3073f;
+    height: 40vh;
+    width: 60px;
+    position: fixed;
+    left: 20px;
+    top: 250px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 12px;
+    z-index: 9;
+    background-color: #1a1a1d;
+}
+
+section .social-media i{
+    font-size: 25px;
+}
+
+section .social-media div i:hover{
+    cursor: pointer;
+    color: #c3073f;
+    transition: all 1s;
+}
+
+/* Navigation Bar */
+
+nav{
+    font-family:  ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 9;
+    opacity: 0.8;
+    box-shadow: 0px 0.1px 20px grey
+}
+
+/* Style for left  logo*/
+
+.navigation .left{
+    color: #c3073f;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav .navigation .left div i{
+    color: #c3073f;
+    font-size: 30px;
+}
+
+/* Style for right ul */
+.navigation{
+    background-color: #1a1a1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.navigation .uls{
+    margin-right: 120px;
+    display: flex;
+    width: 40%;
+}
+
+.navigation .uls ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 140%;
+}
+
+.navigation .uls ul li{
+    list-style: none;
+    padding-top: 8px;
+}
+
+.navigation .uls ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation .uls ul li  :hover{
+    color: #c3073f;
+    text-decoration: underline;
+    transition: all 0.9s;
+}
+
+/* Header */
+
+header .header{
+    display: flex;
+    background-color: #1a1a1d;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+header .header .left{
+    z-index: 8;
+    height: fit-content;
+    width: 55%;
+    padding: 10.5em 52px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:  ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-left: 60px;
+}
+
+header .header .left h4{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+header .header .left h1{
+    font-size: 70px;
+    color: orange;;
+}
+
+header .header .left h2{
+    font-size: 50px;
+    color: #c3073f;
+}
+
+header .header .left div .btn{
+    background-color: #1a1a1d;
+    border: 2px solid #c3073f;
+    font-weight: bold;
+    color: #c3073f;
+    width: fit-content;
+    padding: 6px 10px;
+    margin-top: 40px;
+}
+
+header .header .left div .btn:hover{
+   color: white;
+   box-shadow: inset 170px 0 0 0 #c3073f;
+   cursor: pointer;
+   transition: all 1s; 
+}
+
+header .header .left div .btn a{
+    text-decoration: none;
+}
+
+header .header .right{
+    background: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    height:initial;
+    width: 55%;
+    clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+
+/* About Me */
+
+section .about-me{
+    height: 100vh;
+    width: 100%;
+    background-color: #EEEEEE 
+}
+
+section .about-me .heading h1{
+    color: black;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+section .about-me .main-content {
+    margin-top: 30px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 170px;
+}
+
+section .about-me .left{
+    height: 70vh;
+    width: 49%;
+    border: 5px solid orange;
+    background: url("https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    box-shadow: -30px -30px 3px orange;
+}
+
+section .about-me .right{
+    margin-top: 60px;
+    height: 50vh;
+    width: 49%;
+    padding: 20px 20px;
+}
+
+section .about-me .right p{
+    color: #1a1a1d;
+    height: max-content;
+}
+
+/* My Skills */
+
+section .my-skills{
+    background-color: #1a1a1d;
+    width: 100%;
+    height: 80vh;
+}
+
+section .my-skills .heading h1{
+    color: #EEEEEE;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0px;
+}
+
+  section .my-skills .main-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 140px;
+  }
+
+section .my-skills .left{
+    color: white;
+    height: 50vh;
+    width: 49%;
+}
+
+section .my-skills .main-content .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .my-skills .main-content .left .one,section .my-skills .main-content .left .two,section .my-skills .main-content .left .three{
+    display: flex;
+    width: 100%;
+}
+
+section .my-skills .main-content .left .one .icon,section .my-skills .main-content .left .two .icon,section .my-skills .main-content .left .three .icon{
+    width: 10%;
+}
+
+section .my-skills .main-content .left .one .icon i,section .my-skills .main-content .left .two .icon i,section .my-skills .main-content .left .three .icon i{
+    font-size: 40px;
+    color: orange;
+
+}
+
+section .my-skills .main-content .left .one .info,section .my-skills .main-content .left .two .info,section .my-skills .main-content .left .three .info{
+    /* font-size: 30px; */
+    color: orange;
+    width: 90%;
+}
+
+section .my-skills .right{
+    height: 50vh;
+    width: 49%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .my-skills .right .one div {
+    width: 100%;
+    height: 15px;
+    margin-top: 4px;
+    background-color: #EEEEEE;
+}
+
+section .my-skills .right .one div div{
+    height: 15px;
+    width: 80%;
+    background-color: #c3073f;
+}
+
+section .my-skills .right .one div {
+    width: 100%;
+    height: 15px;
+    margin-top: 4px;
+    background-color: #EEEEEE;
+}
+
+section .my-skills .right .two div {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 15px;
+    margin-top: 4px;
+}
+
+section .my-skills .right .two div div{
+    width: 70%;
+    background-color: orange;
+    height: 15px;
+}
+
+section .my-skills .right .three div {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 15px;
+    margin-top: 4px;
+}
+
+section .my-skills .right .three div div{
+    width: 50%;
+    background-color: blue;
+    height: 15px;
+}
+
+section .my-skills .right .four div {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 15px;
+    margin-top: 4px;
+}
+
+section .my-skills .right .four div div{
+    width: 40%;
+    background-color: green;
+    height: 15px;
+}
+
+section .my-skills .right .five div {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 15px;
+    margin-top: 4px;
+}
+
+section .my-skills .right .five div div{
+    width: 70%;
+    background-color: darkblue;
+    height: 15px;
+}
+
+section .my-skills .right .six div {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 15px;
+    margin-top: 4px;
+}
+
+section .my-skills .right .six div div{
+    width: 50%;
+    background-color: red;
+    height: 15px;
+}
+
+/* Contact Me */
+
+.contact-me{
+    width: 100%;
+    height: 90vh;
+    height: max-content;
+}
+ 
+.contact-me .heading h1{
+    color: #1a1a1d;
+    font-size: 40px;
+    /* margin-left: 670px; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#contact-details{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: #1a1a1d;
+    height: max-content;
+}
+
+#contact-details .details{
+    width: 40%;
+    color: #1a1a1d;
+}
+
+#contact-details .details span,#form-details form span{
+    font-size: 12px;
+    color: #1a1a1d;
+}
+
+#contact-details .details h2,#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+    color: #1a1a1d;
+}
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    color: #1a1a1d;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    color: #1a1a1d;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+    padding-top: 18px;
+    color: #1a1a1d;
+}
+
+#contact-details .details li i p{
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #1a1a1d;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+    color: #1a1a1d;
+}
+
+#contact-details .map frame{
+    width: 100%;
+    height: 100%;
+    color: #1a1a1d;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: #1a1a1d;
+    margin-bottom: 20px;
+}
+
+#form-details form input,#form-details form textarea{
+    width: 100%;
+     padding: 12px 15px;
+     outline: none;
+     border: 1px solid #e1e1e1;
+     color: #1a1a1d;
+}
+
+#form-details form .normal{
+    background-color: black;
+    border: 2px solid #1a1a1d;
+    font-weight: bold;
+    color: #1a1a1d;
+    width: 100%;
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    margin-top: 10px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d;
+    padding: 20px;
+}
+
+footer .left{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 200px;
+}
+
+footer .left div i{
+    width: 25%;
+}
+
+footer .right .copyright,footer .right{
+    color: gray;
+    width: 100%;
+    text-align: center;
+}

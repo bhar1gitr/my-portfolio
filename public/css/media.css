@@ -1,0 +1,231 @@
+@media screen and (max-width: 1000px) {
+
+/* Hamburge menu */
+#bar{
+    display: block;
+}
+
+/* Side Bar */
+
+section .social-media{
+    display: none;
+}
+
+/* Navigation Bar */
+
+nav .navigation{
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+nav .navigation .left{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 24px;
+}
+
+nav .navigation .uls{
+    display: none;
+}
+
+nav .navigation .uls{
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 30px;
+    opacity: 1;
+    margin: 0px 0px;
+    z-index: 10;
+}
+
+nav .navigation .uls ul{
+    flex-direction: column;
+}
+
+nav .navigation .uls ul li:hover{
+    background-color: orange;
+}
+
+/* Header */
+
+header .header{
+    flex-direction: column;
+}
+
+header .header .right{
+    display: none;
+}
+
+header .header .left{
+    margin: 0px 0px;
+    width: 100%;
+}
+
+header .header .left {
+    text-align: center;
+}
+
+header .header .left div{
+    width: 100%;
+} 
+
+header .header .left div .btn{
+   margin: 0px auto;
+   font-size: 30px;
+   margin-top: 54px;
+}
+
+header .header .right{
+    display: none;
+}
+
+/* About Me */
+
+section .about-me .main-content{
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+section .about-me .main-content .left{
+    width: 100%;
+}
+
+section .about-me .right{
+    padding: 0px 0px;
+}
+
+section .about-me .right p {
+    font-size: 20px;
+}
+
+section .about-me .main-content .right{
+    width: 100%;
+}
+
+/* My Skills */
+
+section .my-skills{
+    height: max-content;
+}
+
+section .my-skills .main-content{
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+section .my-skills .main-content .left{
+    width: 100%;
+}
+
+section .my-skills .main-content .right{
+    width: 100%;
+}
+
+
+/* Contact Us */
+
+#form-details form{
+    width: 100%;
+}
+
+.contact-me{
+    padding: 50px 10px;
+    margin-bottom: 0px;
+}
+
+.contact-me #form-details {
+    padding: 8px 20px;
+}
+
+/* My Projects */
+
+
+/* Footer */
+
+footer .left{
+    display: flex;
+}
+
+}
+
+@media screen and (max-width: 540px){
+
+/* Header */
+header .header .left h4 {
+    font-size: 24px;
+}
+
+header .header .left h1{
+    font-size: 55px;
+}
+
+header .header .left h2{
+    font-size: 35px;
+}
+
+header .header .left div .btn{
+    font-size: 20px;
+}
+
+/* About Me */
+section .about-me{
+    height: max-content;
+}
+
+/* My Skills */
+section .my-skills .main-content{
+    padding: 0px 5px;
+}
+
+section .my-skills .main-content .left .one,section .my-skills .main-content .left .two,section .my-skills .main-content .left .three{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section .my-skills .main-content .left .one .info,section .my-skills .main-content .left .two .info,section .my-skills .main-content .left .three .info{
+    /* font-size: 30px; */
+    color: orange;
+    width: 80%;
+}
+
+/* Footer */
+footer .left{
+    padding: 10px 100px;
+}
+
+}
+
+@media screen and (max-width: 325px){
+
+/* Navigation Bar */
+.navigation .left{
+    font-size: 24px;
+}
+
+section .about-me .left{
+    height: 100vh;
+}
+
+section .about-me .right p{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+/* My Skills */
+section .my-skills .main-content .left{
+    height: max-content;
+}
+
+/* Contact Me */
+.contact-me #form-details{
+    padding: 8px 0px;
+}
+
+/* Footer */
+    footer .left{
+    padding: 10px 50px;
+}
+
+}
+

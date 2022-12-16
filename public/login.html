@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <style>
+        nav{
+            opacity: 1;
+            display: block;
+        }
+
+        .contact-me{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navigation">
+            <div class="left">
+                Bharat Sharma
+            </div>
+            <div class="uls">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="/my-projects">My Projects</a></li>
+                </ul>
+                <div onclick="window.location.href='login.html'">Admin Login</div>
+            </div>
+
+        </div>
+    </nav>
+   
+
+    <!-- Contact Me -->
+
+    <div class="contact-me">
+        <div class="heading">
+            <h1>Admin Login</h1>
+        </div>
+        <section id="form-details">
+            <form action="">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="normal">Login</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
