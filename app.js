@@ -5,8 +5,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const path = require('path');
 const fileUpload = require('express-fileupload');
-const port = 3000 || process.env.PORT;
 require('dotenv').config();
+const port = 3000 || process.env.PORT;
 
 // BodyParser
 app.use(bodyParser.urlencoded({ extended : true }))
